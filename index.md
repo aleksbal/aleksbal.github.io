@@ -1,12 +1,12 @@
 Experienced Senior Software Engineer with a strong focus on Java ecosystem, cloud technologies, service-oriented architectures, microservices, API design, and IT security.
 
 ## Services Offered
-- Platform architecture and data integration components (microservices)
+- Microservices design and implementation
+- Platform architecture and data integration components
 - Data integration strategy and implementation
-- Microservices design and development
 - Microservices performance monitoring and tuning
 - Machine learning operations platform design and implementation
-- Aeronautical information systems design and development
+- Aeronautical information systems - design and development
 
 ## Work Experience
 - Java Senior Software Engineer (permanent and freelancer) at BKA (Bundeskriminalamt) in Germany - 03/2022 to Present
@@ -19,8 +19,8 @@ Technologies/Tools: Java 17, Spring Boot 3.2, Spring Cloud, Python, Node.js, Act
 Technologies/Tools: Java, Spring Boot 2.5, ActiveMQ, Node.js, Jenkins, GitHub, Gradle, AWS, SpringCloud
 
 ## Skills
-- Programming languages: Java, Kotlin, Groovy, JavaScript, Python
-- Backend: Spring / Spring Boot, Node.js, RabbitMQ, Kafka, Apache, WebFlux, RH JBoss EAP, Oracle Weblogic
+- *Programming languages:* Java, Kotlin, Groovy, JavaScript, Python
+- **Backend:** Spring / Spring Boot, Node.js, RabbitMQ, Kafka, Apache, WebFlux, RH JBoss EAP, Oracle Weblogic
 - NoSQL: MongoDB, Elasticsearch
 - Relational DBMS: Oracle DBMS, PostgreSQL
 - APIs: OpenAPI, AsyncAPI, REST, GraphQL, AMQP, SOAP
