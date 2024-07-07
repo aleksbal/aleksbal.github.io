@@ -1,4 +1,40 @@
-## Welcome to my Blog
+Experienced Senior Software Engineer with a strong focus on Java ecosystem, cloud technologies, service-oriented architectures, microservices, API design, and IT security.
+
+## Services Offered
+- Platform architecture and data integration components (microservices)
+- Data integration strategy and implementation
+- Microservices design and development
+- Microservices performance monitoring and tuning
+- Machine learning operations platform design and implementation
+- Aeronautical information systems design and development
+
+## Work Experience
+- Java Senior Software Engineer (permanent and freelancer) at BKA (Bundeskriminalamt) in Germany - 03/2022 to Present
+Technologies/Tools: Java 17/21, Kotlin, Spring Boot 3.2, Kafka, Elasticsearch/Kibana, Cloud Foundry, Jenkins, GitHub, Gradle, Jira
+
+- Java Senior Software Engineer at 3PC GmbH Berlin - 04/2021 to 09/2021
+Technologies/Tools: Java 17, Spring Boot 3.2, Spring Cloud, Python, Node.js, ActiveMQ, Elasticsearch, Kubernetes, Helm, Jenkins, GitHub, Gradle, Jira
+
+- Freelance IT Consultant for Aeronautical Information Systems (AIS) at m-click.aero GmbH - 05/2020 to 04/2021
+Technologies/Tools: Java, Spring Boot 2.5, ActiveMQ, Node.js, Jenkins, GitHub, Gradle, AWS, SpringCloud
+
+## Skills
+- Programming languages: Java, Kotlin, Groovy, JavaScript, Python
+- Backend: Spring / Spring Boot, Node.js, RabbitMQ, Kafka, Apache, WebFlux, RH JBoss EAP, Oracle Weblogic
+- NoSQL: MongoDB, Elasticsearch
+- Relational DBMS: Oracle DBMS, PostgreSQL
+- APIs: OpenAPI, AsyncAPI, REST, GraphQL, AMQP, SOAP
+- Frontend: React, Vue.js, Apache Tapestry, Struts
+- DevOps: GitLab, Gradle, Maven, Docker, Jenkins, Kubernetes, Cloud Foundry
+- Cloud: AWS, Cloud Foundry
+- AI: ChatGPT, OpenAI API, TensorFlow, PyTorch, LLM
+- PM and requirement management: JIRA, Confluence, Redmine, Doors
+- IDE & Tools: IntelliJ IDEA, NetBeans, Eclipse, Atom, Insomnia, SwaggerUI, SoapUI, Enterprise Architect (EA), XML Spy
+
+## Contact
+- Email: aleksandar.balaban@gmail.com
+
+
 
 You can use the [editor on GitHub](https://github.com/aleksbal/blog/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
