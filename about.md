@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Experienced Senior Software Engineer with a strong focus on Java ecosystem, cloud technologies, service-oriented architectures, microservices, API design, and IT security.
 
 ### More Information
 
