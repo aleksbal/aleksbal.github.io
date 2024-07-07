@@ -39,13 +39,13 @@ Technologies/Tools: Java, Spring Boot 2.5, ActiveMQ, Node.js, Jenkins, GitHub, G
  OGC® Testbed-12 Aviation Security Engineering Report
  OGC® Testbed 11 Digital Notice to Airmen (NOTAM) Validation and Enrichment Service Engineering Report
 - Aleksandar Balaban, Charles Chen: Standards for Data Quality Assurance in ATM Modernization Initiatives published in ATCA Journal Winter Issue 2015
-- Eduard Gringinger, Georg Trausmuth, Aleksandar Balaban, Josef Jahn, Harald Milchrahm: [Experience Report on Successful Demonstration of SWIM by three Industry Partners, Integrated Communications Navigation and Surveillance (ICNS) Conference April 24-26, 2012]
-(http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6218403&url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F6204388%2F6218368%2F06218403.pdf%3Farnumber%3D6218403)
+- Eduard Gringinger, Georg Trausmuth, Aleksandar Balaban, Josef Jahn, Harald Milchrahm: [Experience Report on Successful Demonstration of SWIM by three Industry Partners, Integrated Communications Navigation and Surveillance (ICNS) Conference April 24-26, 2012](https://ieeexplore.ieee.org/document/6218403)
 - Bernhard Schreder, Aleksandar Balaban, Juan Miguel Gomez,Klaus Niederacher: MIKSI - A Semantic and Service Oriented Integration Platform ESWS 2004: 459-472 http://link.springer.com/chapter/10.1007/978-3-540-25956-5_32 
 
 ## Contact
 - Email: aleksandar.balaban@gmail.com
 
+## How to build a webpage
 
 You can use the [editor on GitHub](https://github.com/aleksbal/blog/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
