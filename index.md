@@ -40,7 +40,7 @@ Technologies/Tools: Java, Spring Boot 2.5, ActiveMQ, Node.js, Jenkins, GitHub, G
  OGC® Testbed 11 Digital Notice to Airmen (NOTAM) Validation and Enrichment Service Engineering Report
 - [Aleksandar Balaban, Charles Chen: Standards for Data Quality Assurance in ATM Modernization Initiatives published in ATCA Journal Winter Issue 2015](https://transport.ec.europa.eu/system/files/2016-09/atca_winter15_02.pdf)
 - Eduard Gringinger, Georg Trausmuth, Aleksandar Balaban, Josef Jahn, Harald Milchrahm: [Experience Report on Successful Demonstration of SWIM by three Industry Partners, Integrated Communications Navigation and Surveillance (ICNS) Conference April 24-26, 2012](https://ieeexplore.ieee.org/document/6218403)
-- Bernhard Schreder, Aleksandar Balaban, Juan Miguel Gomez,Klaus Niederacher: MIKSI - A Semantic and Service Oriented Integration Platform ESWS 2004: 459-472 http://link.springer.com/chapter/10.1007/978-3-540-25956-5_32 
+- [Bernhard Schreder, Aleksandar Balaban, Juan Miguel Gomez,Klaus Niederacher: MIKSI - A Semantic and Service Oriented Integration Platform ESWS 2004: 459-472](http://link.springer.com/chapter/10.1007/978-3-540-25956-5_32) 
 
 ## Contact
 - Email: aleksandar.balaban@gmail.com
