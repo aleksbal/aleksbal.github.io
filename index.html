@@ -1,18 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleksandar Balaban - Senior Software Engineer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background: #333;
+            color: #fff;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            position: fixed;
+            overflow-y: auto;
+        }
+        .sidebar h2 {
+            color: #fff;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin: 10px 0;
+        }
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            box-sizing: border-box;
+            width: calc(100% - 270px);
+        }
+        .content h1, .content h2, .content p {
+            margin: 0 0 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Blog Entries</h2>
+            <ul>
+                <li><a href="#" onclick="showContent('blog1')">Non-blocking WebFlux with Spring Boot</a></li>
+                <li><a href="#" onclick="showContent('blog2')">Geospatial Queries in MongoDB</a></li>
+                <li><a href="#" onclick="showContent('blog3')">Introduction to Kafka Streams</a></li>
+                <li><a href="#" onclick="showContent('blog4')">Microservices Deployment with Kubernetes</a></li>
+                <li><a href="#" onclick="showContent('blog5')">Using OpenAPI for API Design</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Aleksandar Balaban</h1>
+            <h2>Senior Software Engineer</h2>
+            <p>Email: <a href="mailto:aleksandar.balaban@gmail.com">aleksandar.balaban@gmail.com</a></p>
+            <p>Tel.: +4917628743460</p>
+
+            <h2>Summary</h2>
+            <p>Experienced Senior Software Engineer with a strong focus on Java ecosystem, cloud technologies, service-oriented architectures, microservices, API design, and IT security...</p>
+
+            <h2>Services Offered</h2>
+            <ul>
+                <li>Platform architecture and data integration components (microservices)</li>
+                <li>Data integration strategy and implementation</li>
+                <li>Microservices deployment and maintenance</li>
+                <li>Service performance monitoring and tuning</li>
+                <li>Machine learning operations platform design and implementation</li>
+                <li>Aeronautical information systems development and consultancy</li>
+                <li>Change management for life sciences</li>
+            </ul>
+
+            <h2>Work Experience</h2>
+            <p><strong>Java Senior Software Engineer (permanent and freelancer) at BKA (Bundeskriminalamt)</strong> - 03/2022 to Present</p>
+            <p>Technologies/Tools: Java 17/21, Kotlin, Spring Boot 3.2, Kafka, Elasticsearch/Kibana, Cloud Foundry, Jenkins, GitHub, Gradle, Jira</p>
+
+            <p><strong>Java Senior Software Engineer at 3PC GmbH Berlin</strong> - 04/2021 to 09/2021</p>
+            <p>Technologies/Tools: Java 17, Spring Boot 3.2, Spring Cloud, Python, Node.js, ActiveMQ, Elasticsearch, Kubernetes, Helm, Jenkins, GitHub, Gradle, Jira</p>
+
+            <p><strong>Freelance IT Consultant for Aeronautical Information Systems (AIS) at m-click.aero GmbH</strong> - 05/2020 to 04/2021</p>
+            <p>Technologies/Tools: Java, Spring Boot 2.5, ActiveMQ, Node.js, Jenkins, GitHub, Gradle, AWS, SpringCloud</p>
+
+            <!-- Add more work experiences here -->
+
+            <h2>Skills</h2>
+            <p>Programming languages: Java, Kotlin, Groovy, JavaScript, Python</p>
+            <p>Backend: Spring / Spring Boot, Node.js, RabbitMQ, Kafka, Apache, WebFlux, RH JBoss EAP, Oracle Weblogic</p>
+            <p>NoSQL: MongoDB, Elasticsearch</p>
+            <p>Relational DBMS: Oracle DBMS, PostgreSQL</p>
+            <p>APIs: OpenAPI, AsyncAPI, REST, GraphQL, AMQP, SOAP</p>
+            <p>Frontend: Vue.js, Apache Tapestry, Struts</p>
+            <p>DevOps: GitLab, Gradle, Maven, Docker, Jenkins, Kubernetes, Cloud Foundry</p>
+            <p>Cloud: AWS, Cloud Foundry</p>
+            <p>AI: ChatGPT, OpenAI API, TensorFlow, PyTorch, LLM</p>
+            <p>PM and requirement management: JIRA, Confluence, Redmine, Doors</p>
+            <p>IDE & Tools: IntelliJ IDEA, NetBeans, Eclipse, Atom, Insomnia, SwaggerUI, SoapUI, Enterprise Architect (EA), XML Spy</p>
+
+            <h2>Contact</h2>
+            <div class="contact">
+                <p>Email: <a href="mailto:aleksandar.balaban@gmail.com">aleksandar.balaban@gmail.com</a></p>
+                <p>Tel.: +4917628743460</p>
+            </div>
+
+            <!-- Blog content sections -->
+            <div id="blog1" class="blog-content" style="display: none;">
+                <h2>Non-blocking WebFlux with Spring Boot</h2>
+                <p>Spring WebFlux is a part of the Spring Framework that supports the non-blocking and reactive web applications. It uses Project Reactor to provide a declarative, efficient, and scalable approach to handling concurrent web requests. This is particularly useful in applications requiring high concurrency and low latency.</p>
+                <p>One of the key benefits of using WebFlux over traditional Spring MVC is its ability to handle more requests with fewer threads. This is because WebFlux uses a non-blocking event loop rather than a one-thread-per-request model. This leads to better resource utilization and performance in applications where I/O operations are a bottleneck.</p>
+                <p>To get started with Spring WebFlux, you can create a new Spring Boot project and include the `spring-boot-starter-webflux` dependency. You can then define your controllers and handlers using reactive types such as `Mono` and `Flux` to handle the request and response data streams.</p>
+                <pre><code class="language-java">
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.reactive.function.server.RouterFunction;
+import org.springframework.web.reactive.function.server.ServerResponse;
+import static org.springframework.web.reactive.function.server.RouterFunctions.route;
+import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
+
+@SpringBootApplication
+public class WebFluxApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(WebFluxApplication.class, args);
+    }
+
+    @Bean
+    public RouterFunction&lt;ServerResponse&gt; routes() {
+        return route(GET("/hello"), 
+            request -&gt; ServerResponse.ok().bodyValue("Hello, WebFlux!"));
+    }
+}
+                </code></pre>
+                <p>In this example, we define a simple Spring Boot application with a WebFlux router function that handles GET requests to the "/hello" endpoint. The response is non-blocking and handled using a reactive type.</p>
+            </div>
+
+            <div id="blog2" class="blog-content" style="display: none;">
+                <h2>Geospatial Queries in MongoDB</h2>
+                <p>MongoDB offers powerful geospatial features that allow you to store and query data related to geographic locations. With MongoDB, you can perform various geospatial queries such as finding documents within a certain distance from a point, finding documents within a specific polygon, and more.</p>
+                <p>To take advantage of MongoDB's geospatial features, you need to store your location data in a specific format. MongoDB supports two main types of geospatial data: GeoJSON objects and legacy coordinate pairs. Once your data is stored in the correct format, you can create geospatial indexes on your collections to enable efficient querying.</p>
+                <p>For example, to find all documents within a certain radius from a point, you can use the `$geoWithin` operator with a `$centerSphere` query:</p>
+                <pre><code class="language-js">
+db.places.find({
+    location: {
+        $geoWithin: {
+            $centerSphere: [[-73.9667, 40.78], 0.0045]
+        }
+    }
+});
+                </code></pre>
+                <p>In this query, `location` is the field containing the geospatial data, and the `$centerSphere` operator is used to define a spherical area with a center point and a radius (in radians).</p>
+                <p>To use geospatial queries in a Java application, you can leverage the MongoDB Java driver. Here's an example of how to perform a geospatial query using the MongoDB Java driver:</p>
+                <pre><code class="language-java">
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+import static com.mongodb.client.model.Filters.geoWithinCenterSphere;
+
+public class GeoSpatialQueryExample {
+    public static void main(String[] args) {
+        var mongoClient = MongoClients.create("mongodb://localhost:27017");
+        MongoDatabase database = mongoClient.getDatabase("test");
+        MongoCollection&lt;Document&gt; collection = database.getCollection("places");
+
+        var results = collection.find(geoWithinCenterSphere("location", -73.9667, 40.78, 0.0045));
+        results.forEach(doc -&gt; System.out.println(doc.toJson()));
+    }
+}
+                </code></pre>
+            </div>
+
+            <div id="blog3" class="blog-content" style="display: none;">
+                <h2>Introduction to Kafka Streams</h2>
+                <p>Kafka Streams is a client library for building real-time, scalable, and fault-tolerant stream processing applications on top of Apache Kafka. It allows you to process and transform data streams in real-time, making it suitable for applications such as data pipelines, event-driven microservices, and more.</p>
+                <p>One of the key advantages of Kafka Streams is that it provides a high-level DSL (Domain-Specific Language) for defining stream processing topologies. This makes it easy to create complex stream processing applications with minimal boilerplate code. Additionally, Kafka Streams integrates seamlessly with Kafka, providing fault-tolerance, scalability, and high-throughput.</p>
+                <p>To get started with Kafka Streams, you need to add the `kafka-streams` dependency to your project and define your stream processing topology. Here's an example of a simple Kafka Streams application that reads from an input topic, processes the data, and writes to an output topic:</p>
+                <pre><code class="language-java">
+import org.apache.kafka.common.serialization.Serdes;
+import org.apache.kafka.streams.KafkaStreams;
+import org.apache.kafka.streams.StreamsBuilder;
+import org.apache.kafka.streams.StreamsConfig;
+import org.apache.kafka.streams.kstream.KStream;
+
+import java.util.Properties;
+
+public class KafkaStreamsExample {
+    public static void main(String[] args) {
+        Properties props = new Properties();
+        props.put(StreamsConfig.APPLICATION_ID_CONFIG, "kafka-streams-example");
+        props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());
+        props.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getClass());
+
+        StreamsBuilder builder = new StreamsBuilder();
+        KStream&lt;String, String&gt; stream = builder.stream("input-topic");
+        stream.mapValues(value -&gt; value.toUpperCase())
+              .to("output-topic");
+
+        KafkaStreams streams = new KafkaStreams(builder.build(), props);
+        streams.start();
+    }
+}
+                </code></pre>
+                <p>In this example, we define a Kafka Streams application that reads messages from the "input-topic", converts the message values to uppercase, and writes the results to the "output-topic".</p>
+            </div>
+
+            <div id="blog4" class="blog-content" style="display: none;">
+                <h2>Microservices Deployment with Kubernetes</h2>
+                <p>Kubernetes has become the de facto standard for deploying and managing microservices applications. It provides a robust platform for container orchestration, allowing you to deploy, scale, and manage your microservices in a declarative and automated manner.</p>
+                <p>One of the key features of Kubernetes is its ability to handle service discovery and load balancing. With Kubernetes, you can define services that group a set of pods (containers) together and provide a stable endpoint for clients to interact with. Kubernetes will automatically distribute traffic to the pods and ensure high availability.</p>
+                <p>Another important feature of Kubernetes is its support for rolling updates and rollbacks. This allows you to deploy new versions of your microservices without downtime, gradually rolling out the changes and monitoring their impact. If any issues are detected, Kubernetes can automatically roll back to the previous version.</p>
+                <p>To deploy your microservices on Kubernetes, you need to define your application using YAML manifests. Here's an example of a simple Kubernetes deployment and service for a microservice:</p>
+                <pre><code class="language-yaml">
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-microservice
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-microservice
+  template:
+    metadata:
+      labels:
+        app: my-microservice
+    spec:
+      containers:
+      - name: my-microservice
+        image: my-microservice-image:latest
+        ports:
+        - containerPort: 8080
+
 ---
-layout: default
----
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-microservice
+spec:
+  selector:
+    app: my-microservice
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: LoadBalancer
+                </code></pre>
+                <p>In this example, we define a Deployment with three replicas of our microservice and a Service to expose the microservice to the outside world. The Service is of type `LoadBalancer`, which means Kubernetes will provision an external IP to balance the traffic across the pods.</p>
+            </div>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+            <div id="blog5" class="blog-content" style="display: none;">
+                <h2>Using OpenAPI for API Design</h2>
+                <p>OpenAPI, formerly known as Swagger, is a specification for designing and documenting RESTful APIs. It provides a standard way to describe your API's endpoints, request and response formats, authentication methods, and more. This makes it easier for developers to understand and interact with your API.</p>
+                <p>One of the key benefits of using OpenAPI is its ability to generate interactive API documentation. Tools like Swagger UI can render your OpenAPI specification as a user-friendly web interface, allowing developers to explore and test your API endpoints directly from their browser.</p>
+                <p>In addition to documentation, OpenAPI can also be used to generate client libraries and server stubs in various programming languages. This can significantly speed up development by providing ready-made code that interacts with your API.</p>
+                <p>To create an OpenAPI specification, you can use the OpenAPI YAML or JSON format. Here's an example of a simple OpenAPI specification:</p>
+                <pre><code class="language-yaml">
+openapi: 3.0.0
+info:
+  title: Sample API
+  version: 1.0.0
+paths:
+  /hello:
+    get:
+      summary: Returns a greeting message
+      responses:
+        '200':
+          description: A successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'Hello, World!'
+                required:
+                  - message
+                description: The greeting message
+                example:
+                  message: "Hello, World!"
+                default: "Hello, World!"
+                maxLength: 5000
+                minLength: 1
+servers:
+  - url: http://localhost:8080
+                </code></pre>
+                <p>In this example, we define a simple API with a single endpoint `/hello` that returns a greeting message. The `responses` section specifies the expected response format and content. You can use tools like Swagger Editor to write and validate your OpenAPI specification, and tools like Swagger UI to generate interactive documentation.</p>
+            </div>
+        </div>
+    </div>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <script>
+        function showContent(blogId) {
+            // Hide all blog content divs
+            var contents = document.querySelectorAll('.blog-content');
+            contents.forEach(function(content) {
+                content.style.display = 'none';
+            });
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+            // Show the selected blog content div
+            var selectedContent = document.getElementById(blogId);
+            if (selectedContent) {
+                selectedContent.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
