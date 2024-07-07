@@ -1,4 +1,4 @@
-## Welcome to Alex's Blog
+## Welcome to my Blog
 
 You can use the [editor on GitHub](https://github.com/aleksbal/blog/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
